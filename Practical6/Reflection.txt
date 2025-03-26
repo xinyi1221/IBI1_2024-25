@@ -1,0 +1,9 @@
+Reflection on Practical 6: Modelling Infections
+
+This practical was both challenging and useful. Implementing the basic SIR model helped me understand probabilistic disease modeling. 
+
+Challenges:
+1_Understand how to use 'numpy.random.choice' for probabilistic infection and recovery.
+2_Write code to achieve random selection to ensure that the results of each run will change.
+
+Overall, this was a great learning experience! I like practical part more than lecture. The most important thing I learned in Practical was how the SIR model can simulate disease spread and the impact of vaccination.
