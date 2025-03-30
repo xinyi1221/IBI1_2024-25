@@ -1,0 +1,4 @@
+In this Practical, I learned how to use Git for version control and mastered the basics of GitHub, including creating repositories, committing changes, and merging branches. I also learned how to host simple websites on GitHub Pages.
+In the process, I encountered a number of challenges:
+1.At first, I was unfamiliar with Git commands and didn't quite understand the difference between "git add" and "git commit".
+2.I encountered a conflict when merging branches and didn't know how to resolve it, but managed to solve the problem after consulting information and attempts.
