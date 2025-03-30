@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-# Pseudo-code:
+# Pseudocode:
 # 1. Create a list to store population data for each country in the UK.
 # 2. Create a list to store population data for the neighboring provinces of Zhejiang.
 # 3. Sort the population data and print it
