@@ -19,15 +19,16 @@ dalys_data = pd.read_csv("dalys-rate-from-all-causes.csv")
 print("\nYear column for the first 10 rows:")
 print(dalys_data.iloc[0:10, 2])  # The third column is "Year"
 
-# 5. Print the 10th row's country and year
-print("\n10th row country and year:")
-print("Country:", dalys_data.loc[9, "Entity"])
-print("Year:", dalys_data.loc[9, "Year"])
+# 5. Print the 10th row's country and year (Remember: index starts from 0, so row 9 is the 10th row)
+# The 10th year with DALYs data recorded in Afghanistan is: 1999
+afghanistan_data = dalys_data.loc[dalys_data["Entity"] == "Afghanistan"]
+tenth_year = afghanistan_data.iloc[9]["Year"]
+print("\nThe 10th year with DALYs data recorded in Afghanistan is:", tenth_year)
 
 # 6. Use Boolean indexing to select DALYs for the year 1990
 dalys_1990 = dalys_data.loc[dalys_data["Year"] == 1990, "DALYs"]
 print("\nSummary statistics for DALYs in 1990:")
-print(dalys_1990.describe())
+print(dalys_1990)
 
 # 7. Compare average DALYs in UK and France
 uk = dalys_data.loc[dalys_data.Entity == "United Kingdom", ["DALYs", "Year"]]
@@ -42,7 +43,7 @@ print("Mean DALYs - France:", france_mean)
 if uk_mean > france_mean:
     print("The UK has a higher average DALYs.")
 else:
-    print("France has a higher average DALYs.")
+    print("France has a higher average DALYs.")   # The UK has a higher average DALYs
 
 # 8. Plot DALYs over time for the UK
 plt.figure(figsize=(10, 5))
