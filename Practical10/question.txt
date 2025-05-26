@@ -1,0 +1,5 @@
+Q: What countries have recorded DALYs greater than 650,000 in a single year?
+
+Line number in dalys.py where question is addressed: 62
+
+DISCUSSION OF RESULTS: When analyzed, only the 1994 Rwanda DALYs exceeded 650,000 people. While this is fewer countries than I expected, it is a reasonable result. Because 650,000 is a large number, very few countries reached it. Rwanda may have suffered a severe health crisis that year, resulting in a large number of illnesses and deaths.
