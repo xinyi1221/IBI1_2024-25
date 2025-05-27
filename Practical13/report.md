@@ -35,8 +35,14 @@ Random protein sequence of 222 amino acids
 
 Results:
 Comparison	Alignment Score	% Identity
+
 Human vs Mouse	1097, 90.09%
+
 Human vs Random	-193, 4.05%
+
 Mouse vs Random	-199, 3.15%
+
+Which of these two sequences are most closely related:
+Human-Mouse
 
 Note: All alignments are non-gapped and global, starting at position 1 and ending at position 222.
