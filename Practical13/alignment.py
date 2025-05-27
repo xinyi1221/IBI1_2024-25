@@ -1,3 +1,4 @@
+# Define a function to read a FASTA file and return the sequence name and sequence
 def read_fasta(file_path):
     with open(file_path) as f:
         lines = f.readlines()
@@ -5,6 +6,7 @@ def read_fasta(file_path):
     seq = ''.join(line.strip() for line in lines[1:])
     return name, seq
 
+# Define a function to read the BLOSUM62 matrix from a file and return as a dictionary
 def read_blosum62(file_path):
     with open(file_path) as f:
         lines = [line for line in f if not line.startswith('#')]
@@ -17,6 +19,9 @@ def read_blosum62(file_path):
         matrix[row_aa] = dict(zip(headers, scores))
     return matrix
 
+# Define a function to compare two sequences:
+#   - Calculate the alignment score using the BLOSUM62 matrix
+#   - Calculate the percent identity
 def compare_sequences(seq1, seq2, matrix):
     score = 0
     identity = 0
