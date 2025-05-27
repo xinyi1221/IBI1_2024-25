@@ -27,3 +27,7 @@ if language_to_check in language_popularity:
     print(f"The usage percentage of {language_to_check} is {language_popularity[language_to_check]}%")
 else:
     print("Language not found.")
+    
+# Print the dictionary again after the query to show it matches the input
+print("Programming Language Popularity Dictionary after query:")
+print(language_popularity)
