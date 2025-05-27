@@ -2,7 +2,8 @@ import re
 
 def find_largest_intron(seq):
     # Regular expression matching introns between GT (donor site) and AG (acceptor site)
-    introns = re.findall(r'(GT.*AG)', seq)
+    introns = re.findall(r'(GT.*AG)', seq)  # This line of code looks for the largest intron from the first GT to the last AG.
+                                            # Change this line of code to: introns = re.findall(r'(GT.*?AG)', seq) if largest intron means: the largest intron of all possible segments from each GT to the first AG thereafter
     
     if not introns:
         return 0, "No intron found"
